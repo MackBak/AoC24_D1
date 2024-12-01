@@ -24,5 +24,13 @@ public class Main {
         System.out.println(sum);
 
 
+        // Test to see amount
+        long simScoreSum = 0;
+        for (int value : leftArray) {
+            long simScore = calculator.similarityScore(value, rightArray);
+            simScoreSum = simScoreSum + simScore;
+
+            System.out.println("###SIMSCORESUM VERLOOP: ####\n" + simScoreSum);
+        }
     }
 }
